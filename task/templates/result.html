@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Repositories</title>
+</head>
+<body>
+    <h1>GitHub Repositories for {{ username }}</h1>
+    <ul>
+        {% for repository in repositories %}
+            <li>{{ repository.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
